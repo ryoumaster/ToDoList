@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ToDoList/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="conteudo">
+            <h1>ToDoList</h1>
+            <ul>
+                <li><a href="#">Adicionar ToDo's</a></li>
+                <li><a href="./show.html">Visualizar ToDo's</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="divFormulario">
+            <h1>ToDo's</h1>
+            <form class="formulario">
+                <div class="inputs">
+                    <input type="text" id="activity" placeholder="Atividade">
+                    <input type="number" min="1" max="31" id="day" placeholder="Dia">
+                    <input type="number" min="1" max="12" id="month" placeholder="Mês">
+                    <input type="number" min="2024" max="2050" id="year" placeholder="Ano">
+                    <input type="text" id="description" placeholder="Descrição da atividade">
+                </div>
+                <div class="botao">
+                    <button type="submit" onclick="adicionarTarefa()">Adicionar</button>
+                </div>
+            </form>
+        </div>
+
+    <script src="script.js">
+
+    </script>
+    </main>
+</body>
+</html>

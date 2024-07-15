@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/ToDoList/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: rgb(230, 227, 227);">
+    <header class="header">
+        <div class="conteudo">
+            <h1>ToDoList</h1>
+            <ul>
+                <li><a href="./index.html">Adicionar ToDo's</a></li>
+                <li><a href="#">Visualizar ToDo's</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col- conteudoBuscar">
+                <input id="day" class="inputBuscar data" type="text" placeholder="Dia">
+                <input id="month" class="inputBuscar data" type="text" placeholder="Mês">
+                <input id="year" class="inputBuscar data" type="text" placeholder="Ano">
+                <input id="activity" class="inputBuscar" type="text" placeholder="Atividade">
+                <input id="description" class="inputBuscar" type="text" placeholder="Descrição">
+                <button class="btn btn-primary botaoPesquisar" onclick="searchToDos()">Pesquisar</button>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-8 conteudoApresentar">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Atividade</th>
+                        <th scope="col">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody id="showToDo">
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js">
+
+    </script>
+
+</body>
+</html>
